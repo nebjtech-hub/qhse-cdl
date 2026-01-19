@@ -41,7 +41,6 @@ const CHECKLIST = [
       { id: "elec_outside_lighting", label: "Éclairage extérieur" },
       { id: "elec_outlets", label: "Prises de courant (fixation, chauffe, odeur, déclenchement)" },
       { id: "elec_cabinets", label: "Armoires électriques fermées et propres" },
-      { id: "elec_generator", label: "Groupes électrogènes (niveau carburant, fuite, alerte visuelle)" },
       { id: "elec_ups", label: "Onduleurs (voyants, alarmes, autonomie)" },
     ],
   },
@@ -59,7 +58,6 @@ const CHECKLIST = [
     section: "Climatisation / Froid",
     items: [
       { id: "ac_no_leak", label: "Absence de fuite d’eau" },
-      { id: "ac_filters", label: "Filtres propres (vérification visuelle)" },
       { id: "ac_noise", label: "Bruit anormal ?" },
     ],
   },
@@ -492,7 +490,6 @@ function ChecklistScreen({ user, onSaved }) {
     </Container>
   );
 }
-
 
 function AdminDashboard({ user }) {
   const [from, setFrom] = useState(todayISO());
